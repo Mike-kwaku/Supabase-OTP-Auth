@@ -33,7 +33,7 @@ col1, col2 = st.columns(2)
 with col1:
         with st.expander('Generate Token to Login'):
             email = st.text_input('Email', key='enter email address')
-            generate_btn = st.button('Login', on_click=login_otp, args=(email)
+            generate_btn = st.button('Login', on_click=login_otp, args=(email))
                                      
 with col2:
         with st.expander('Verify Token'):
