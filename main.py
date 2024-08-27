@@ -31,7 +31,7 @@ def verify_otp(email, token_code, type):
 
 col1, col2 = st.columns(2)
 with col1:
-        with st.expander('Generate OTP to Login'):
+        with st.expander('Generate OTP'):
             email = st.text_input('Email', key='enter email address')
             generate_btn = st.button('Generate OTP', on_click=login_otp, args=(email))
                                      
